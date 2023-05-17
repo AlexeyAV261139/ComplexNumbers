@@ -16,5 +16,12 @@ namespace ComplexNumbers
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ComplexNumbers complexNumbers = new ComplexNumbers(double.Parse(textBoxRealNumA.Text), double.Parse(textBoxRealNumB.Text));
+            labelFinal.Text = complexNumbers.Summ(double.Parse(textBoxSummA.Text), double.Parse(textBoxSummB.Text));
+            label1.Text = complexNumbers.ToString();
+        }
     }
 }
