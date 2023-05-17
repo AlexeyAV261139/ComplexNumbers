@@ -34,9 +34,9 @@
         {
             return $"{realNumberA} + {realNumberB}i";
         }
-		public string Summ(double realNumA, double realNumB)
+		public string Summ(double realNumC, double realNumD)
 		{
-			return $"{this.realNumberA + realNumA} + {this.realNumberB + realNumB}i";
+			return $"{this.realNumberA + realNumC} + {this.realNumberB + realNumD}i";
 		}
 
     }
