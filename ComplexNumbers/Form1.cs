@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ComplexNumbers
@@ -24,6 +17,8 @@ namespace ComplexNumbers
             labelFinal.Text = $"(a + bi) + (c + di) = \n\r= ({complexNumbersAB}) + ({complexNumbersCD}) = " +
                 $"{complexNumbersAB.Summ(double.Parse(textBoxSummA.Text), double.Parse(textBoxSummB.Text))}" ;
             label1.Text = $"a + bi = {complexNumbersAB}";
+            labelFinalDif.Text = $"(a + bi) - (c + di) = \n\r= ({complexNumbersAB} - ({complexNumbersCD}) = " +
+                $"{complexNumbersAB.Difference(double.Parse(textBoxSummA.Text),double.Parse(textBoxSummB.Text))}";
         }
 
       

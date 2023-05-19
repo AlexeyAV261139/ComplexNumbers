@@ -2,25 +2,20 @@
 {
     internal class ComplexNumbers
     {
-		private double realNumberA;
+		private double realNumberA, realNumberB, imaginagyNumberDegree;
 
 		public double RealNumberA
 		{
 			get { return realNumberA; }
 			set { realNumberA = value; }
 		}
-
-		private double realNumberB;
-
+		
 		public double RealNumberB
 		{
 			get { return realNumberB; }
 			set { realNumberB = value; }
 		}
-		 
-
-		private double imaginagyNumberDegree;
-
+		 		
 		public double ImaginaryNumberDegree
 		{
 			get { return imaginagyNumberDegree; }
@@ -37,6 +32,11 @@
 		public string Summ(double realNumC, double realNumD)
 		{
 			return $"{this.realNumberA + realNumC} + {this.realNumberB + realNumD}i";
+		}
+		public string Difference(double realNumC, double realNumD)
+		{
+			return $"{this.realNumberA - realNumC} + {this.realNumberB - realNumD}i";
+
 		}
 
     }

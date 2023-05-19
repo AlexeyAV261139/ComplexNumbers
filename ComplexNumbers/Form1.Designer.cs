@@ -39,6 +39,7 @@
             this.labelB = new System.Windows.Forms.Label();
             this.labelC = new System.Windows.Forms.Label();
             this.labelD = new System.Windows.Forms.Label();
+            this.labelFinalDif = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxRealNumA
@@ -59,7 +60,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(470, 54);
+            this.button1.Location = new System.Drawing.Point(506, 76);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 36);
             this.button1.TabIndex = 2;
@@ -69,7 +70,7 @@
             // 
             // textBoxSummA
             // 
-            this.textBoxSummA.Location = new System.Drawing.Point(75, 121);
+            this.textBoxSummA.Location = new System.Drawing.Point(83, 121);
             this.textBoxSummA.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxSummA.Name = "textBoxSummA";
             this.textBoxSummA.Size = new System.Drawing.Size(72, 29);
@@ -122,7 +123,7 @@
             // labelC
             // 
             this.labelC.AutoSize = true;
-            this.labelC.Location = new System.Drawing.Point(48, 124);
+            this.labelC.Location = new System.Drawing.Point(56, 124);
             this.labelC.Name = "labelC";
             this.labelC.Size = new System.Drawing.Size(19, 21);
             this.labelC.TabIndex = 9;
@@ -137,11 +138,21 @@
             this.labelD.TabIndex = 10;
             this.labelD.Text = "d";
             // 
+            // labelFinalDif
+            // 
+            this.labelFinalDif.AutoSize = true;
+            this.labelFinalDif.Location = new System.Drawing.Point(297, 209);
+            this.labelFinalDif.Name = "labelFinalDif";
+            this.labelFinalDif.Size = new System.Drawing.Size(137, 21);
+            this.labelFinalDif.TabIndex = 11;
+            this.labelFinalDif.Text = "(a + bi) - (c + di)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 400);
+            this.ClientSize = new System.Drawing.Size(645, 310);
+            this.Controls.Add(this.labelFinalDif);
             this.Controls.Add(this.labelD);
             this.Controls.Add(this.labelC);
             this.Controls.Add(this.labelB);
@@ -175,6 +186,7 @@
         private System.Windows.Forms.Label labelB;
         private System.Windows.Forms.Label labelC;
         private System.Windows.Forms.Label labelD;
+        private System.Windows.Forms.Label labelFinalDif;
     }
 }
 
