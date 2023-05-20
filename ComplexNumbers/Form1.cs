@@ -19,8 +19,13 @@ namespace ComplexNumbers
             label1.Text = $"a + bi = {complexNumbersAB}";
             labelFinalDif.Text = $"(a + bi) - (c + di) = \n\r= ({complexNumbersAB} - ({complexNumbersCD}) = " +
                 $"{complexNumbersAB.Difference(double.Parse(textBoxSummA.Text),double.Parse(textBoxSummB.Text))}";
+
+            ComplexMulti complexMulti = new ComplexMulti(double.Parse(textBoxRealNumA.Text), double.Parse(textBoxRealNumB.Text));
+            labelMulti.Text = $"(a + bi) * (c + di) =\n\r" +
+                $"({complexMulti.RealNumberA} + {complexMulti.RealNumberB}i) * ({textBoxSummA.Text} + {textBoxSummB.Text}i) =\n\r" +
+                $"{complexMulti.Multiplication(double.Parse(textBoxSummA.Text), double.Parse(textBoxSummB.Text))}";
         }
 
-      
+        
     }
 }

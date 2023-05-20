@@ -40,6 +40,7 @@
             this.labelC = new System.Windows.Forms.Label();
             this.labelD = new System.Windows.Forms.Label();
             this.labelFinalDif = new System.Windows.Forms.Label();
+            this.labelMulti = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxRealNumA
@@ -141,17 +142,27 @@
             // labelFinalDif
             // 
             this.labelFinalDif.AutoSize = true;
-            this.labelFinalDif.Location = new System.Drawing.Point(297, 209);
+            this.labelFinalDif.Location = new System.Drawing.Point(297, 198);
             this.labelFinalDif.Name = "labelFinalDif";
             this.labelFinalDif.Size = new System.Drawing.Size(137, 21);
             this.labelFinalDif.TabIndex = 11;
             this.labelFinalDif.Text = "(a + bi) - (c + di)";
+            // 
+            // labelMulti
+            // 
+            this.labelMulti.AutoSize = true;
+            this.labelMulti.Location = new System.Drawing.Point(15, 198);
+            this.labelMulti.Name = "labelMulti";
+            this.labelMulti.Size = new System.Drawing.Size(140, 21);
+            this.labelMulti.TabIndex = 12;
+            this.labelMulti.Text = "(a + bi) * (c + di)";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 310);
+            this.Controls.Add(this.labelMulti);
             this.Controls.Add(this.labelFinalDif);
             this.Controls.Add(this.labelD);
             this.Controls.Add(this.labelC);
@@ -187,6 +198,7 @@
         private System.Windows.Forms.Label labelC;
         private System.Windows.Forms.Label labelD;
         private System.Windows.Forms.Label labelFinalDif;
+        private System.Windows.Forms.Label labelMulti;
     }
 }
 
