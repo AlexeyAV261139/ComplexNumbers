@@ -34,13 +34,14 @@
             this.textBoxSummA = new System.Windows.Forms.TextBox();
             this.textBoxSummB = new System.Windows.Forms.TextBox();
             this.labelFinal = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelAB = new System.Windows.Forms.Label();
             this.labelA = new System.Windows.Forms.Label();
             this.labelB = new System.Windows.Forms.Label();
             this.labelC = new System.Windows.Forms.Label();
             this.labelD = new System.Windows.Forms.Label();
             this.labelFinalDif = new System.Windows.Forms.Label();
             this.labelMulti = new System.Windows.Forms.Label();
+            this.labelCD = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxRealNumA
@@ -61,7 +62,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(506, 76);
+            this.button1.Location = new System.Drawing.Point(278, 51);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 36);
             this.button1.TabIndex = 2;
@@ -71,7 +72,7 @@
             // 
             // textBoxSummA
             // 
-            this.textBoxSummA.Location = new System.Drawing.Point(83, 121);
+            this.textBoxSummA.Location = new System.Drawing.Point(431, 51);
             this.textBoxSummA.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxSummA.Name = "textBoxSummA";
             this.textBoxSummA.Size = new System.Drawing.Size(72, 29);
@@ -79,7 +80,7 @@
             // 
             // textBoxSummB
             // 
-            this.textBoxSummB.Location = new System.Drawing.Point(197, 121);
+            this.textBoxSummB.Location = new System.Drawing.Point(545, 51);
             this.textBoxSummB.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxSummB.Name = "textBoxSummB";
             this.textBoxSummB.Size = new System.Drawing.Size(73, 29);
@@ -94,14 +95,14 @@
             this.labelFinal.TabIndex = 5;
             this.labelFinal.Text = "(a + bi) + (c + di)";
             // 
-            // label1
+            // labelAB
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(292, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 21);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "a + bi";
+            this.labelAB.AutoSize = true;
+            this.labelAB.Location = new System.Drawing.Point(136, 25);
+            this.labelAB.Name = "labelAB";
+            this.labelAB.Size = new System.Drawing.Size(53, 21);
+            this.labelAB.TabIndex = 6;
+            this.labelAB.Text = "a + bi";
             // 
             // labelA
             // 
@@ -124,7 +125,7 @@
             // labelC
             // 
             this.labelC.AutoSize = true;
-            this.labelC.Location = new System.Drawing.Point(56, 124);
+            this.labelC.Location = new System.Drawing.Point(404, 54);
             this.labelC.Name = "labelC";
             this.labelC.Size = new System.Drawing.Size(19, 21);
             this.labelC.TabIndex = 9;
@@ -133,7 +134,7 @@
             // labelD
             // 
             this.labelD.AutoSize = true;
-            this.labelD.Location = new System.Drawing.Point(169, 124);
+            this.labelD.Location = new System.Drawing.Point(517, 54);
             this.labelD.Name = "labelD";
             this.labelD.Size = new System.Drawing.Size(20, 21);
             this.labelD.TabIndex = 10;
@@ -157,18 +158,28 @@
             this.labelMulti.TabIndex = 12;
             this.labelMulti.Text = "(a + bi) * (c + di)";
             // 
+            // labelCD
+            // 
+            this.labelCD.AutoSize = true;
+            this.labelCD.Location = new System.Drawing.Point(484, 25);
+            this.labelCD.Name = "labelCD";
+            this.labelCD.Size = new System.Drawing.Size(53, 21);
+            this.labelCD.TabIndex = 13;
+            this.labelCD.Text = "a + bi";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 310);
+            this.Controls.Add(this.labelCD);
             this.Controls.Add(this.labelMulti);
             this.Controls.Add(this.labelFinalDif);
             this.Controls.Add(this.labelD);
             this.Controls.Add(this.labelC);
             this.Controls.Add(this.labelB);
             this.Controls.Add(this.labelA);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelAB);
             this.Controls.Add(this.labelFinal);
             this.Controls.Add(this.textBoxSummB);
             this.Controls.Add(this.textBoxSummA);
@@ -192,13 +203,14 @@
         private System.Windows.Forms.TextBox textBoxSummA;
         private System.Windows.Forms.TextBox textBoxSummB;
         private System.Windows.Forms.Label labelFinal;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelAB;
         private System.Windows.Forms.Label labelA;
         private System.Windows.Forms.Label labelB;
         private System.Windows.Forms.Label labelC;
         private System.Windows.Forms.Label labelD;
         private System.Windows.Forms.Label labelFinalDif;
         private System.Windows.Forms.Label labelMulti;
+        private System.Windows.Forms.Label labelCD;
     }
 }
 
