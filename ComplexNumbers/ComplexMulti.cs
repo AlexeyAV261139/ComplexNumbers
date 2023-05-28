@@ -16,7 +16,7 @@ namespace ComplexNumbers
 
         public string Multiplication(double realNumC, double realMunD)
         {
-            return $"{(this.RealNumberA * realNumC) - (RealNumberB * realMunD)} + {(RealNumberA * realMunD) + (realNumC * RealNumberB)}i +";
+            return $"{(this.RealNumberA * realNumC) - (RealNumberB * realMunD)} + {(RealNumberA * realMunD) + (realNumC * RealNumberB)}i";
                 
         }
 
